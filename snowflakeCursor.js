@@ -41,16 +41,16 @@ function snowflakeCursor(options) {
       let bgCanvas = document.createElement("canvas");
       let bgContext = bgCanvas.getContext("2d");
       console.log(measurements);
-      bgCanvas.width = measurements.width;
-      bgCanvas.height = measurements.width*2;
+      bgCanvas.width = measurements.width*4;
+      bgCanvas.height = measurements.width*4;
 
       bgContext.textAlign = "center";
       bgContext.font = "2em serif";
       bgContext.textBaseline = "middle";
       bgContext.fillText(
         emoji,
-        bgCanvas.width / 2,
-        measurements.width
+        bgCanvas.width/2,
+        bgCanvas.height/2
       );
 
       canvImages.push(bgCanvas);
@@ -102,12 +102,13 @@ function snowflakeCursor(options) {
       cursor.x = e.clientX;
       cursor.y = e.clientY;
     }
-
-    addParticle(
-      cursor.x,
-      cursor.y,
+    let x = cursor.x;
+    let y = cursor.y;
+    setTimeout(function(){addParticle(
+      x,
+      y,
       canvImages[Math.floor(Math.random() * possibleEmoji.length)]
-    );
+    )},75);
   }
 
   function addParticle(x, y, img) {
