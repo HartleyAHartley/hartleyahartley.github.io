@@ -14,11 +14,15 @@ function snowflakeCursor(options) {
 
   function init() {
     canvas = document.createElement("canvas");
+    canvas.setAttribute("aria-label","Canvas used to display emoji cursor trail. The trail is made up of the trans flag, the pride flag, the kissing emoji, and the pleading face emoji");
+    canvas.setAttribute("role","img");
+
     context = canvas.getContext("2d");
 
     canvas.style.top = "0px";
     canvas.style.left = "0px";
     canvas.style.pointerEvents = "none";
+    canvas.role
 
     if (hasWrapperEl) {
       canvas.style.position = "absolute";
@@ -40,7 +44,7 @@ function snowflakeCursor(options) {
       let measurements = context.measureText('a');
       let bgCanvas = document.createElement("canvas");
       let bgContext = bgCanvas.getContext("2d");
-      console.log(measurements);
+      
       bgCanvas.width = measurements.width*4;
       bgCanvas.height = measurements.width*4;
 

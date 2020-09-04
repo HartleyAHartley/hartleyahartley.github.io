@@ -9,7 +9,8 @@
 body{
   background-image: url(stars2.gif);
   background-size: 38vw;
-  height: 100%;
+  height: 100vh;
+  background-color: black;
 }
 
 a {
@@ -26,12 +27,6 @@ a:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.construction {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
 }
 
 .content {
@@ -51,12 +46,36 @@ a:hover {
   user-select: none;
 }
 
-.links {
-  font-size: min(1.6em,2.4vw);
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000000;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
 }
 
-.name {
-  font-size: min(5.5em,7.5vw);
+#construction {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#links {
+  font-size: min(2em,6vw);
+}
+
+#install-now {
+  width: min(8em,24vw)
+  
+}
+
+#name {
+  font-size: min(5em,15vw);
   margin: 0;
   background: red;
   background: -webkit-linear-gradient(left, #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
@@ -66,6 +85,7 @@ a:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 30vw;
+  background-size: min(400px,30vw);
   background-position: center;
+  width: 100vw;
 }
