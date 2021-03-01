@@ -19,15 +19,15 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   /* background: -webkit-linear-gradient(left, #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
   background: -o-linear-gradient(right,  #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
   background: -moz-linear-gradient(right,  #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
   background: linear-gradient(to right,  #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062); //*/
-  background: -webkit-linear-gradient(left, #444444, #FFFFFF, #FFFFFF, #444444);
-  background: -o-linear-gradient(right, #444444, #FFFFFF, #FFFFFF, #444444);
-  background: -moz-linear-gradient(right, #444444, #FFFFFF, #FFFFFF, #444444);
-  background: linear-gradient(to right, #444444, #FFFFFF, #FFFFFF, #444444);
+  background: -webkit-linear-gradient(left, #444444, #dddddd, #dddddd, #444444);
+  background: -o-linear-gradient(right, #444444, #dddddd, #dddddd, #444444);
+  background: -moz-linear-gradient(right, #444444, #dddddd, #dddddd, #444444);
+  background: linear-gradient(to right, #444444, #dddddd, #dddddd, #444444);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
