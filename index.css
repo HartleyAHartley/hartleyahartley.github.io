@@ -20,10 +20,14 @@ a {
 
 a:hover {
   text-decoration: none;
-  background: -webkit-linear-gradient(left, #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
+  /* background: -webkit-linear-gradient(left, #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
   background: -o-linear-gradient(right,  #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
   background: -moz-linear-gradient(right,  #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
-  background: linear-gradient(to right,  #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
+  background: linear-gradient(to right,  #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062); //*/
+  background: -webkit-linear-gradient(left, #444444, #FFFFFF, #FFFFFF, #444444);
+  background: -o-linear-gradient(right, #444444, #FFFFFF, #FFFFFF, #444444);
+  background: -moz-linear-gradient(right, #444444, #FFFFFF, #FFFFFF, #444444);
+  background: linear-gradient(to right, #444444, #FFFFFF, #FFFFFF, #444444);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -78,10 +82,10 @@ a:hover {
   font-size: min(5em,15vw);
   margin: 0;
   background: red;
-  background: -webkit-linear-gradient(left, #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
-  background: -o-linear-gradient(right,  #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
-  background: -moz-linear-gradient(right,  #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
-  background: linear-gradient(to right,  #D62900 , #FF9B55, #FFFFFF, #D461A6, #A50062);
+  background: -webkit-linear-gradient(left, #d62700f0, #FF9B55f0, #FFFFFFf0, #D461A6f0, #A50062f0);
+  background: -o-linear-gradient(right,  #d62700f0, #FF9B55f0, #FFFFFFf0, #D461A6f0, #A50062f0);
+  background: -moz-linear-gradient(right,  #d62700f0, #FF9B55f0, #FFFFFFf0, #D461A6f0, #A50062f0);
+  background: linear-gradient(to right,  #d62700f0, #FF9B55f0, #FFFFFFf0, #D461A6f0, #A50062f0);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
